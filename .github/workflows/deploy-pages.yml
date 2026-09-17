@@ -27,9 +27,7 @@ jobs:
       - name: Build site
         run: |
           mkdir -p _site
-          cp mockup.html _site/index.html
-          cp mockup.html _site/mockup.html
-          touch _site/.nojekyll
+          cp index.html .nojekyll _site/
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
